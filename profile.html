@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Kelas XI TKJ SMKS PGRI BANYUPUTIH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-brand">
+            SMKS <span>PGRI</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#siswa">Daftar Siswa</a></li>
+                <li><a href="about.html#pimpinan">Pimpinan & Pembimbing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="profile-page" class="profile-page">
+        <section class="profile-panel">
+            <a class="profile-back-link" href="about.html">Kembali ke halaman tentang kelas</a>
+            <div class="profile-initial" id="profile-initial" aria-hidden="true">?</div>
+            <h1 id="profile-name">Memuat profil...</h1>
+            <p class="role-badge" id="profile-role"></p>
+
+            <section class="about-panel">
+                <h2>Tentang Saya</h2>
+                <p id="about-text">Memuat cerita...</p>
+            </section>
+
+            <p id="profile-status" class="profile-status" role="status" aria-live="polite"></p>
+
+            <form id="profile-login-form" class="profile-form" hidden>
+                <h2>Masuk untuk mengedit profil</h2>
+                <label for="profile-username">Username atau email</label>
+                <input type="text" id="profile-username" autocomplete="username" required>
+                <label for="profile-password">Kata sandi</label>
+                <input type="password" id="profile-password" autocomplete="current-password" required>
+                <button class="btn-primary" type="submit">Masuk</button>
+            </form>
+
+            <form id="about-editor" class="profile-form" hidden>
+                <label for="profile-name-value">Nama</label>
+                <input type="text" id="profile-name-value" maxlength="120" required>
+                <label for="about-value">Ceritakan tentang diri Anda</label>
+                <textarea id="about-value" rows="7" maxlength="3000" placeholder="Tuliskan perkenalan, minat, pengalaman, atau cita-cita..." required></textarea>
+                <button class="btn-primary" type="submit">Simpan Profil</button>
+            </form>
+
+            <button id="profile-logout" class="profile-logout" type="button" hidden>Keluar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kelas Resmi <span>SMKS PGRI</span>. Dibuat dengan semangat kebersamaan.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
