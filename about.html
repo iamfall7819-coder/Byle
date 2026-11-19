@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kelas XI TKJ - SMKS PGRI BANYUPUTIH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-brand">
+            SMKS <span>PGRI</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#beranda">Beranda</a></li>
+                <li><a href="#pimpinan">Pimpinan & Wali</a></li>
+                <li><a href="#siswa">Daftar 13 Siswa</a></li>
+                <li><a href="#tentang" aria-current="page">Tentang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tentang" class="hero">
+            <h2>Tentang Kelas XI TKJ</h2>
+            <p>Kenali para siswa, pimpinan, dan pembimbing yang menjadi bagian dari keluarga besar kelas kami.</p>
+        </section>
+
+        <section id="pimpinan" class="container">
+            <div class="section-title">
+                <h3>Pimpinan & Pembimbing</h3>
+                <div class="line"></div>
+            </div>
+
+            <div class="leaders-grid">
+                <div class="card leader-card">
+                    <a class="profile-avatar-link" href="profile.html?id=kepala-sekolah" aria-label="Buka profil Kepala Sekolah" title="Buka profil Kepala Sekolah">
+                        <span class="avatar avatar-initial" aria-hidden="true">IA</span>
+                    </a>
+                    <div class="role-badge">Kepala Sekolah</div>
+                    <h4>Irawan Adi Wasito, S.T.</h4>
+                    <p>NIP. 19700512 199802 1 003</p>
+                </div>
+
+                <div class="card leader-card">
+                    <a class="profile-avatar-link" href="profile.html?id=wali-kelas" aria-label="Buka profil Wali Kelas" title="Buka profil Wali Kelas">
+                        <span class="avatar avatar-initial" aria-hidden="true">ZA</span>
+                    </a>
+                    <div class="role-badge">Wali Kelas</div>
+                    <h4>Zulfi Amaliyah, S.Kom.</h4>
+                    <p>NIP. 19880914 201503 2 007</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="siswa" class="container" style="padding-top: 10px;">
+            <div class="section-title">
+                <h3>Daftar Anggota Kelas (13 Siswa)</h3>
+                <div class="line"></div>
+            </div>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari nama siswa atau jabatan kelas...">
+            </div>
+
+            <div class="students-grid" id="students-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kelas Resmi <span>SMKS PGRI</span>. Dibuat dengan semangat kebersamaan.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

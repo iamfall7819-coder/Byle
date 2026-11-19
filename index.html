@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Kelas - SMKS PGRI BANYUPUTIH</title>
+    <!-- Menghubungkan ke file style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. LAYAR ANIMASI PECAHAN PEMBUKA -->
+    <div id="intro-screen">
+        <div class="logo-container">
+            <div class="name-stage">
+                <h1 class="intro-name">Byle</h1>
+                <div class="name-fragments" aria-hidden="true"></div>
+            </div>
+            <div class="logo-badge">
+                <img src="../img/logo-pgri.png" alt="Logo SMKS PGRI">
+                <div class="logo-fragments" aria-hidden="true"></div>
+            </div>
+            <h2>SMKS PGRI BANYUPUTIH</h2>
+            <p>Portal Resmi Kelas XI TKJ &bull; Tuntas Sehat Berbudaya</p>
+        </div>
+    </div>
+
+    <!-- 2. HEADER & NAVIGASI -->
+    <header>
+        <div class="nav-brand">
+            SMKS <span>PGRI</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#pimpinan">Pimpinan & Wali</a></li>
+                <li><a href="#siswa">Daftar 13 Siswa</a></li>
+                <li><a href="about.html">Tentang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 3. HERO SECTION -->
+    <section id="beranda" class="hero">
+        <h2>Selamat Datang di Website Kelas Kami</h2>
+        <p>Ruang digital kebersamaan keluarga besar kelas SMKS PGRI. Mencetak generasi unggul, berkarakter, dan siap kerja.</p>
+        <a href="#siswa" class="btn-primary">Lihat Anggota Kelas</a>
+    </section>
+
+    <!-- 4. BAGIAN KEPALA SEKOLAH & WALI KELAS -->
+    <section id="pimpinan" class="container">
+        <div class="section-title">
+            <h3>Pimpinan & Pembimbing</h3>
+            <div class="line"></div>
+        </div>
+
+        <div class="leaders-grid">
+            <!-- Kartu Kepala Sekolah -->
+            <div class="card leader-card">
+                <a class="profile-avatar-link" href="profile.html?id=kepala-sekolah" aria-label="Buka profil Kepala Sekolah" title="Buka profil Kepala Sekolah">
+                    <span class="avatar avatar-initial" aria-hidden="true">IA</span>
+                </a>
+                <div class="role-badge">Kepala Sekolah</div>
+                <h4>Irawan Adi Wasito, S.T.</h4>
+                <p>NIP. 19700512 199802 1 003</p>
+            </div>
+
+            <!-- Kartu Wali Kelas -->
+            <div class="card leader-card">
+                <a class="profile-avatar-link" href="profile.html?id=wali-kelas" aria-label="Buka profil Wali Kelas" title="Buka profil Wali Kelas">
+                    <span class="avatar avatar-initial" aria-hidden="true">ZA</span>
+                </a>
+                <div class="role-badge">Wali Kelas</div>
+                <h4>Zulfi Amaliyah, S.Kom.</h4>
+                <p>NIP. 19880914 201503 2 007</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. BAGIAN 13 SISWA -->
+    <section id="siswa" class="container" style="padding-top: 10px;">
+        <div class="section-title">
+            <h3>Daftar Anggota Kelas (13 Siswa)</h3>
+            <div class="line"></div>
+        </div>
+
+        <!-- Fitur Pencarian Siswa -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Cari nama siswa atau jabatan kelas...">
+        </div>
+
+        <!-- Wadah Grid 13 Siswa (Diisi otomatis oleh script.js) -->
+        <div class="students-grid" id="students-container"></div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer>
+        <p>&copy; 2026 Kelas Resmi <span>SMKS PGRI</span>. Dibuat dengan semangat kebersamaan.</p>
+    </footer>
+
+    <!-- Menghubungkan ke file script.js -->
+    <script src="script.js"></script>
+</body>
+</html>
